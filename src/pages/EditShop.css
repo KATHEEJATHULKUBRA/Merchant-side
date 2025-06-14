@@ -1,0 +1,104 @@
+.edit-shop-container {
+    padding: 3rem;
+}
+
+.edit-shop-container h2 {
+    margin-bottom: 50px;
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.overall-edit {
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.image-upload {
+    border: 1px dashed #aaa;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    height: 80px;
+}
+
+
+.preview-banner {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.preview-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.save-btn,
+.cancel-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #b1458b;
+    color: #fff;
+}
+
+.cancel-btn {
+    border: 2px solid #b1458b;
+    background-color: transparent;
+    color: #b1458b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .edit-shop-container {
+        padding: 20px 15px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+}

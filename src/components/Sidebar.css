@@ -1,0 +1,145 @@
+/* Sidebar.css */
+
+.sidebar {
+    width: 240px;
+    /* background: linear-gradient(135deg, #f4d7ec, #eacfe6); */
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #EAD3E1;
+    z-index: 100;
+    /* box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05); */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #9b2c6b;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease-in-out;
+} */
+
+/* .logo span {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #d57aa3;
+} */
+
+.logo img {
+    width: 170px;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease, padding-left 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    /* background-color: #a13373; */
+    background: #AC4F8A;
+    color: white;
+    padding-left: 1.5rem;
+}
+
+.nav-link .icon {
+    transition: transform 0.3s;
+    color: gray;
+}
+
+.nav-link:hover .icon {
+    transform: scale(1.1);
+    color: white;
+   
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #a13373;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+    margin-top: auto;
+}
+
+.logout:hover {
+    background: #a13373;
+    color: white;
+}
+
+.logout:hover .icon {
+    
+    color: white;
+}
+
+/* Responsive Sidebar - Collapsible on small screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-link span,
+    .logout span {
+        display: none;
+    }
+
+    .nav-link,
+    .logout {
+        justify-content: center;
+        padding: 0.75rem;
+    }
+
+    .nav-link .icon,
+    .logout .icon {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+}

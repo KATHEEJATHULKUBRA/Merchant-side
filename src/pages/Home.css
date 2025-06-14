@@ -1,0 +1,260 @@
+/* Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+/* Home Page Container */
+.home-page {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: 220px;
+    padding: 2rem;
+    padding-left: 3rem;
+    background: #fff;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Top Bar */
+
+.welcome-msg {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.welcome-msg h3 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.welcome-msg p {
+    font-size: 20px;
+
+}
+
+.top-icons {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.icon-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: white;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.profile-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.profile-dropdown img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Sales Overview */
+.sales-overview {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.sales-card {
+    flex: 1;
+    border-radius: 10px;
+    padding: 1.25rem;
+    color: white;
+}
+
+.sales-card.daily {
+    background: #a24a83;
+}
+
+.sales-card.total {
+    background: #f17d8a;
+}
+
+.sales-card p {
+    font-size: 0.9rem;
+}
+
+.sales-card h3 {
+    font-size: 1.5rem;
+}
+
+/* Low Stock Section */
+.low-stock h4 {
+    margin-bottom: 1rem;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.product-img {
+    font-size: 2rem;
+}
+
+.product-info h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.stock-badge {
+    background: #e5cbe0;
+    padding: 12px 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+}
+
+.stock-badge span {
+    color: #AC4F8A;
+
+}
+
+.sales-card.daily,
+.sales-card.total {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left img {
+    width: 60px;
+}
+
+.right p {
+    font-size: 20px;
+}
+
+.right {
+    text-align: center;
+    line-height: 35px;
+}
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .home-page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .sidebar .logo,
+    .logout {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .top-icons {
+        align-self: flex-end;
+    }
+
+    .sales-overview {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,8 @@
+.page {
+  display: flex;
+}
+.content {
+  margin-left: 200px;
+  flex: 1;
+  padding: 20px;
+}
