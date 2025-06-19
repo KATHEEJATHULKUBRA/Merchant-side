@@ -15,6 +15,8 @@ import Notification from './pages/Notification';
 import Profile from './pages/Profile';
 import EditProduct from './pages/EditProduct';
 import AddProduct from './pages/AddProduct';
+import Sale from './pages/Sale'
+import ReturnOrder from './pages/ReturnOrder';
 
 
 
@@ -29,12 +31,14 @@ const App = () => (
         <Route path="/shop" element={<ProtectedRoute><Shop /></ProtectedRoute>} />
         <Route path="/rental" element={<ProtectedRoute><Rental /></ProtectedRoute>} />
         <Route path="/order" element={<ProtectedRoute><Order /></ProtectedRoute>} />
+        <Route path="/return-order" element={<ProtectedRoute><ReturnOrder /></ProtectedRoute>} />
         <Route path="/edit-shop" element={<EditShop />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/notification" element={<Notification />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/edit-product/:id" element={<EditProduct />} />
         <Route path="/AddProduct" element={<AddProduct />} />
+        <Route path="/sale" element={<Sale/>}/>
       </Routes>
     </Router>
   </AuthProvider>

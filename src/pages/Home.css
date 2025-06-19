@@ -196,6 +196,12 @@ html {
     margin-right: 10px;
 }
 
+.report p {
+    color: gray;
+    margin-right: 2rem;
+    text-align: right;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {

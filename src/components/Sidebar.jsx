@@ -48,6 +48,12 @@ const Sidebar = () => {
                             <span>Orders</span>
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/return-order" className="nav-link">
+                            <i className="fas fa-undo-alt icon"></i>
+                            <span>Return Orders</span>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
 

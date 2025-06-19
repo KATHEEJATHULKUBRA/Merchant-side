@@ -47,14 +47,14 @@ const Profile = () => {
                             <label>Shop Contact Number:</label>
                             <input type="text" value="+91 9865321470" readOnly />
                         </div>
-                        <div className="form-group status-group">
+                        {/* <div className="form-group status-group">
                             <label>Shop Status:</label>
                             <span className="toggle-text">Active</span>
                             <label className="switch">
                                 <input type="checkbox" checked readOnly />
                                 <span className="slider round"></span>
                             </label>
-                        </div>
+                        </div> */}
                         <button className="save-btn">Save Changes</button>
                     </div>
 

@@ -1,0 +1,113 @@
+.sale-container {
+    padding: 2rem 4rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    
+    color: #333;
+}
+
+.sale-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sale-header h2 {
+   font-size: 26px;
+   margin-bottom: 0.3rem;
+   margin-left: 10px;
+}
+
+.summary-icon {
+  font-size: 32px;
+  color: white;
+}
+
+.back-icon {
+  cursor: pointer;
+  font-size: 26px;
+  color: #333;
+}
+
+
+.sale-summary {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.summary-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 240px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-box img {
+    width: 32px;
+    height: 32px;
+}
+
+.summary-box.violet {
+    background-color: #81328d;
+}
+
+.summary-box.pink {
+    background-color: #f37a8d;
+}
+
+.summary-box.red {
+    background-color: #f79191;
+}
+
+.summary-box p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.summary-box h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.order-table h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.order-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.status.delivered {
+    color: green;
+    font-weight: 600;
+}
+
+.status.canceled {
+    color: red;
+    font-weight: 600;
+}
+
+.status.processing {
+    color: orange;
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: bold;
+}
